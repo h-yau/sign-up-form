@@ -8,6 +8,28 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    
+    <div>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+    </div>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required>
+            <label for="user-email">EMAIL</label>
+            <input type="email" name="user-email" id="user-email" required>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+            <button type="submit">Create Account</button>
+        </fieldset>
+    </form>
+    <p>Already have an account? <a href="#">Log In</a></p>
 </body>
 </html>
