@@ -5,6 +5,39 @@
 }
 
 form * {
-    /* appearance: none; */
     font: inherit;
 }
+
+fieldset {
+    max-width: min(95%, 50rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+
+}
+
+@media (max-width: 950px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+    }
+    fieldset div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 min(10rem, 10%);
+    }
+
+}
+
+@media (width > 950px) {
+    fieldset div {
+        margin: 0 auto;
+        max-width: min-content;
+    }
+
+    fieldset input {
+        margin: 0.5rem 0;
+    }
+    }
