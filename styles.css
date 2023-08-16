@@ -10,6 +10,7 @@
 :root {
     --gapping: 1.5rem;
     --logo-height:10dvh;
+    --box-shadow: rgba(0, 0, 0, 0.25);
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -19,18 +20,35 @@ form * {
 }
 
 fieldset {
+    margin: ;
     max-width: min(95%, 50rem);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: var(--gapping);
+    border: none;
+    box-shadow: 0 1px 8px 0 var(--box-shadow);
+    margin: 0 auto;
+    margin-bottom: var(--gapping);
+}
 
+input {
+    appearance: none;
+    border-radius: 30px;
+    border: 0.1rem solid var(--box-shadow);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
 }
 
 @media (max-width: 950px) {
     fieldset {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
         padding: var(--gapping) 0;
     }
     fieldset div {
@@ -56,25 +74,17 @@ fieldset {
     }
     
     .hero {
-        flex: 1 1 40%; /* this needs to go once there's an image inserted here */
         height: 100dvh;
-        max-width: 41rem;
+        max-width: 50rem;
         overflow: hidden;
-        box-shadow: 1px 0 6px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 1px 0 6px 4px var(--box-shadow);
     }
-    
-    .main-content {
-        flex: 1 1 60%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 3rem;
-    }
-
 }
 
 
 .hero {
     position: relative;
+    overflow: clip;
 }
 
 .logo-div {
@@ -84,8 +94,9 @@ fieldset {
     height: calc(var(--logo-height) + 2rem);
     top: 20vh;
     display: flex;
-    gap: calc(var(--gapping) * 2);
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--gapping) + 1rem);
 }
 
 .logo {
@@ -95,10 +106,25 @@ fieldset {
 
 .left-image {
     height: 100dvh;
-    overflow-y: hidden;
 }
 
 .hook-text {
     font-weight: 900;
     font-size: 2rem;
 }
+
+.main-content,
+.main-content p {
+    padding: var(--gapping);
+}
+
+.main-content {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--gapping) * 3);
+    max-width: min(95%, 50rem);
+    justify-content: space-between;
+    gap: var(--gapping);
+}
+
