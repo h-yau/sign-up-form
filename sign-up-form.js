@@ -6,7 +6,6 @@ const confirmPassword = document.querySelector('#confirm-password');
 confirmPassword.addEventListener("input", (e) => {
     if (confirmPassword.value != password.value) {
         confirmPassword.setCustomValidity("Passwords should match!");
-        
     }
 })
 
