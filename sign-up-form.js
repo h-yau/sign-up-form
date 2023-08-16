@@ -3,8 +3,6 @@ const inputs = document.querySelectorAll('input');
 const password = document.querySelector('#password');
 const confirmPassword = document.querySelector('#confirm-password');
 
-
-/// still working on the input green/red while not focus situation
 inputs.forEach(input => {
     input.addEventListener("input", event => {
         input = event.target
@@ -17,8 +15,6 @@ inputs.forEach(input => {
         }
     });
 });
-
-
 
 confirmPassword.addEventListener("input", (e) => {
     e.preventDefault();

@@ -37,6 +37,11 @@ fieldset {
     margin-bottom: var(--gapping);
 }
 
+label.required::after {
+    content: "*";
+    color: var(--border-invalid-color);
+}
+
 input {
     appearance: none;
     border-radius: 30px;
