@@ -11,6 +11,12 @@
     --gapping: 1.5rem;
     --logo-height:10dvh;
     --box-shadow: rgba(0, 0, 0, 0.25);
+    --border-default-color: #E5E7EB;
+    --border-valid-color: rgb(3, 170, 3);
+    --border-invalid-color: rgb(248, 15, 15);
+    --button-color: rgb(83, 151, 83);
+    --button-down-color: #596D48;
+    --focus-color: rgba(42, 102, 128, 0.747);
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -35,27 +41,38 @@ input {
     appearance: none;
     border-radius: 30px;
     border: 0.1rem solid var(--box-shadow);
+    border-color: var(--border-default-color);
     padding: 0 0.5rem;
 }
 
 input:invalid {
-    border-color: red;
+    border-color: var(--border-invalid-color);
 }
 
 input:valid {
-    border-color: green;
+    border-color: var(--border-valid-color);
+}
+
+input:focus {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, var(--focus-color) 0px 2px 16px 0px;
+}
+
+input:focus-visible {
+    border-color: rgba(42, 102, 128, 0.747);
+    outline: none;
 }
 
 button {
     padding: 0.5rem 1rem;
     color: white;
-    background-color: rgb(83, 151, 83);
+    background-color: var(--button-color);
     border-radius: 25px;
     border: 1px solid white;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: var(--button-down-color);
 }
 
 a {
