@@ -35,6 +35,7 @@ input {
     appearance: none;
     border-radius: 30px;
     border: 0.1rem solid var(--box-shadow);
+    padding: 0 0.5rem;
 }
 
 input:invalid {
@@ -43,6 +44,31 @@ input:invalid {
 
 input:valid {
     border-color: green;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: rgb(83, 151, 83);
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    color: rgb(1, 48, 1);
+}
+
+a:active {
+    color: black;
 }
 
 @media (max-width: 950px) {
