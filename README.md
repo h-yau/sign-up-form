@@ -32,9 +32,9 @@ To view the project, simply open the [live preview](https://nzxzn.github.io/sign
 5. Explore the custom styling and design elements.
 
 ## Assets and Credits
-- Background Image: [Unsplash](https://www.unsplash.com) (Photo by Photographer Name)
-- Font: [Font Name](link-to-font)
-- Logo: [Your Custom Logo](link-to-your-logo)
+- Background Image: [Unsplash](https://www.unsplash.com)
+- Font: [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
+- Logo: [The Odin Project Custom Logo](./cropped-The%20Odin%20Project-logos_white.png)
 
 Please note that the design of this project includes custom colors and logos that may differ from the original assignment.
 
