@@ -1,6 +1,6 @@
 # Sign-up Form Project
 
-Live preview [here](https://nzxzn.github.io/sign-up-form/).
+Live preview [here](https://h-yau.github.io/sign-up-form/).
 
 This project is a custom sign-up form created as part of the Odin Project's curriculum. The goal is to build a functional sign-up form using HTML, CSS, and JavaScript.
 
